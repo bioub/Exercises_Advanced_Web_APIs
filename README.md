@@ -62,3 +62,13 @@ Use a cache first approach for all requests made to images (.svg extension)
 
 Note : the websocket could not be cached
 
+## PWA
+
+Create a Web App Manifest with names, backgrounds and logos
+
+To create the logo you can use the image of your choice and generate the differents sizes with https://www.pwabuilder.com/imageGenerator
+
+Thoses images would have to be precache by the service worker
+
+Follow this MDN guide to add a button in your app to add in to the home screen :
+https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen#javascript_for_handling_the_install
