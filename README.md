@@ -49,3 +49,16 @@ Inside the component, id and likes should be treated as numbers so make the conv
 Move the CSS from `frontend/index.html` to the ShadowDOM
 
 Listen to the click from the outside of the Component and update the corresponding properties/attributes
+
+## Service Workers
+
+Create a new file `frontend/sw.js` and register it as a service worker.
+
+In this file cache `index.html` and `index.js` on install (precache).
+
+Use a network first approach for all requests made to the REST API
+
+Use a cache first approach for all requests made to images (.svg extension)
+
+Note : the websocket could not be cached
+
